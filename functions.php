@@ -5,7 +5,7 @@ require 'config.php';
 function connect($config) {
   
   try {
-    $conn = new PDO('mysql:host=dinnerranger-test.cqrlhvsdobw7.us-east-1.rds.amazonaws.com:3306;dbname=dinnerranger-test',
+    $conn = new PDO('mysql:host=dinnerranger-test.cqrlhvsdobw7.us-east-1.rds.amazonaws.com;dbname=dinnerranger-test',
                     $config['DB_USERNAME'],
                     $config['DB_PASSWORD']);
     $conn->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
