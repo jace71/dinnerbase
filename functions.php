@@ -9,13 +9,13 @@ function connect($config) {
                     $config['DB_USERNAME'],
                     $config['DB_PASSWORD']);
     $conn->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-    echo '<h1>CONNECTED!</h1>';
+    $msg = 'We connected!';
     return $conn;
 
   } catch(PDOException $e) {
 
     echo 'ERROR: ' . $e->getMessage();
-
+    $msg = 'No connect!';
   }
   
 }
