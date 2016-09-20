@@ -8,7 +8,7 @@
     $connectMsg = 'Doh! No connect';
   }
 
-  $recipes = get('dinnerranger_test', $conn);
+  $recipes = get('recipies', $conn);
 ?>
 
 <!doctype html>
