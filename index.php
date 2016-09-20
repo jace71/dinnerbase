@@ -7,6 +7,8 @@
   } else {
     $connectMsg = 'Doh! No connect';
   }
+
+  $recipes = get('dinnerranger_test', $conn);
 ?>
 
 <!doctype html>
@@ -25,9 +27,34 @@
   </head>
   <body>
     <div class="container-fluid">
-      <h1>This Here is a Test Page</h1>
-      <h3>MSG: <?php echo $msg ?></h3>
-      <h3>connectMsg: <?php echo $connectMsg ?></h3>
+      
+      <div class="row">
+        
+        <div class="col-md-2">
+          
+          <h3>DinnerRanger!</h3>
+          
+        </div><!--end col-md-2-->
+        
+        <div class="col-md-6">
+          
+          <h1>This Here is a Test Page</h1>
+          <h3>MSG: <?php echo $msg ?></h3>
+          <h3>connectMsg: <?php echo $connectMsg ?></h3>
+          
+          <?php include 'views/index.view.php'; ?>
+          
+        </div><!--end col-md-8-->
+        
+        <div class="col-md-4">
+          
+          
+          
+        </div><!--end col-md-4-->
+        
+      </div><!--end row-->
+      
+      
       
     </div><!--end container-fluid-->
   </body>
