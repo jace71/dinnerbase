@@ -42,13 +42,15 @@
           <h3>MSG: <?php echo $msg ?></h3>
           <h3>connectMsg: <?php echo $connectMsg ?></h3>
           
-          <?php include 'views/index.view.php'; ?>
+          <h4>Recipe Table  Below:</h4>
+          
+          <?php require 'views/index.view.php'; ?>
           
         </div><!--end col-md-8-->
         
         <div class="col-md-4">
           
-          
+          <div>Right side row</div>
           
         </div><!--end col-md-4-->
         
