@@ -1,12 +1,12 @@
 <?php
-  require 'functions.php';
+//   require 'functions.php';
   
-  $conn = connect($config);
-  if ($conn) {
-    $connectMsg = 'We connected!';
-  } else {
-    $connectMsg = 'Doh! No connect';
-  }
+//   $conn = connect($config);
+//   if ($conn) {
+//     $connectMsg = 'We connected!';
+//   } else {
+//     $connectMsg = 'Doh! No connect';
+//   }
 
   //$recipes = get('recipes', $conn);
 ?>
