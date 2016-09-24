@@ -37,7 +37,7 @@
         <div class="col-md-6">
           
           <h1>This Here is a Test Page</h1>
-          
+          <h3>connectMsg: <?php echo $connectMsg ?></h3>
           
           <h4>Recipe Table  Below:</h4>
           
