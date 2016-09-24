@@ -1,5 +1,12 @@
 <?php 
   require 'functions.php';
+
+  $conn = connect($config);
+  if ($conn) {
+    $connectMsg = 'We connected!';
+  } else {
+    $connectMsg = 'Doh! No connect';
+  }
 ?>
 
 <!doctype html>
