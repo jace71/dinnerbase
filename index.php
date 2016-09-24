@@ -8,7 +8,7 @@
     $connectMsg = 'Doh! No connect';
   }
 
-  $recipes = get('recipies', $conn);
+  $recipes = get('recipes', $conn);
 ?>
 
 <!doctype html>
@@ -44,7 +44,20 @@
           
           <h4>Recipe Table  Below:</h4>
           
-          <?php require 'views/index.view.php'; ?>
+          <h2>Your Recipies</h2>
+
+          <table class="table-striped table-hover">
+
+          <?php foreach $recipes as $recipe : ?>
+
+            <tr>
+              <td><?= $recipe['name']; ?></td>
+              <td><?= $recipe['instructions']; ?></td>
+            </tr>
+
+          <?php endforeach ?>
+
+          </table>          
           
         </div><!--end col-md-8-->
         
