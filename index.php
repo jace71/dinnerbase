@@ -48,8 +48,8 @@
           
           <?php
             
-            $sql = "SELECT * FROM recipes";
-            $recipes = $conn->query($sql);
+            //$sql = "SELECT * FROM recipes";
+            //$recipes = $conn->query($sql);
             
           ?>
 
