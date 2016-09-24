@@ -55,14 +55,14 @@
 
           <table class="table-striped table-hover">
 
-          <?php foreach $recipes as $recipe : ?>
+          <?php //foreach $recipes as $recipe : ?>
 
             <tr>
-              <td><?= $recipe['name']; ?></td>
-              <td><?= $recipe['instructions']; ?></td>
+              <td><?= //$recipe['name']; ?></td>
+              <td><?= //$recipe['instructions']; ?></td>
             </tr>
 
-          <?php endforeach ?>
+          <?php //endforeach ?>
 
           </table>          
           
