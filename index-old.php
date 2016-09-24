@@ -1,3 +1,16 @@
+<?php
+//   require 'functions.php';
+  
+//   $conn = connect($config);
+//   if ($conn) {
+//     $connectMsg = 'We connected!';
+//   } else {
+//     $connectMsg = 'Doh! No connect';
+//   }
+
+  //$recipes = get('recipes', $conn);
+?>
+
 <!doctype html>
 <html>
   <head>
@@ -26,7 +39,8 @@
         <div class="col-md-6">
           
           <h1>This Here is a Test Page</h1>
-          
+          <h3>MSG: <?php echo $msg ?></h3>
+          <h3>connectMsg: <?php echo $connectMsg ?></h3>
           
           <h4>Recipe Table  Below:</h4>
           
@@ -40,8 +54,15 @@
           ?>
 
           <table class="table-striped table-hover">
-            
-            <tr><td>Table here</td></tr>
+
+          <?php //foreach $recipes as $recipe : ?>
+
+            <tr>
+              <td><?= //$recipe['name']; ?></td>
+              <td><?= //$recipe['instructions']; ?></td>
+            </tr>
+
+          <?php //endforeach ?>
 
           </table>          
           
