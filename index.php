@@ -8,7 +8,7 @@
     $connectMsg = 'Doh! No connect';
   }
 
-  $recipes = get('recipes', $conn);
+  //$recipes = get('recipes', $conn);
 ?>
 
 <!doctype html>
@@ -45,6 +45,13 @@
           <h4>Recipe Table  Below:</h4>
           
           <h2>Your Recipies</h2>
+          
+          <?php
+            
+            $sql = "SELECT * FROM recipes";
+            $recipes = $conn->query($sql);
+            
+          ?>
 
           <table class="table-striped table-hover">
 
