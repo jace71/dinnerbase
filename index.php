@@ -62,7 +62,24 @@
             
             ?>
 
-          </table>          
+          </table>
+          
+          <h3>Function Table</h3>
+          
+           <table class="table-striped table-hover">
+            
+            <tr><th>ID</th><th>Name</th><th>Instructions</th><th>Ingredients</th></tr>
+            
+            <?php
+            
+            $funcRecipes = get('recipes',$conn);
+            while($row = $funcRecipes->fetch()){
+              echo '<tr><td>' . $row['id'] . '</td><td>' . $row['name'] . '</td><td>' . $row['instructions'] . '</td><td>' . $row['ingredients'] . '</td></tr>';
+            }
+            
+            ?>
+
+          </table>
           
         </div><!--end col-md-8-->
         
