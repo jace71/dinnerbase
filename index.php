@@ -52,12 +52,12 @@
 
           <table class="table-striped table-hover">
             
-            <tr><td>Table here</td></tr>
+            <tr><th>ID</th><th>Name</th><th>Instructions</th><th>Ingredients</th></tr>
             
             <?php
             
             while($row = $recipes->fetch()){
-              echo '<tr><td>' . $row['id'] . '</td></tr>';
+              echo '<tr><td>' . $row['id'] . '</td><td>' . $row['name'] . '</td><td>' . $row['instructions'] . '</td><td>' . $row['ingredients'] . '</td></tr>';
             }
             
             ?>
