@@ -54,6 +54,13 @@
             
             <tr><td>Table here</td></tr>
             
+            <?php
+            
+            while($row = $recipes->fetch()){
+              echo '<tr><td>' . $row['id'] . '</td></tr>'
+            }
+            
+            ?>
 
           </table>          
           
