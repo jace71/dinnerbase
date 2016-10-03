@@ -45,14 +45,15 @@
           
           <?php
             
-            //$sql = "SELECT * FROM recipes";
-            //$recipes = $conn->query($sql);
+            $sql = "SELECT * FROM recipes";
+            $recipes = $conn->query($sql);
             
           ?>
 
           <table class="table-striped table-hover">
             
             <tr><td>Table here</td></tr>
+            
 
           </table>          
           
