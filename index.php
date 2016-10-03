@@ -57,7 +57,7 @@
             <?php
             
             while($row = $recipes->fetch()){
-              echo '<tr><td>' . $row['id'] . '</td></tr>'
+              echo '<tr><td>' . $row['id'] . '</td></tr>';
             }
             
             ?>
